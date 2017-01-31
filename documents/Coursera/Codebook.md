@@ -1,5 +1,6 @@
 data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
+####Variables
 `test` and `train` : tables `X_test.txt` and `X_train.tst` from UCI HAR Dataset. These contain values for all subjects on the 561 metrics measured.
 
 `feature.labels` : character vector storing names of the 561 metrics measured
@@ -12,7 +13,7 @@ data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20H
 
 `all.stats` : data frame containing mean values for each metric, grouped by subject ID and activity.
 
-
+####Cleaning the Data
 To tidy the data the following steps were taken: 
 - Load data frames `test` and `train`, and add column names from `feature.labels`.
 - Add three additional columns to `test` and `train` - (1) `subject` specifies the subject ID (1:30), (2) `activity` indicates the activity being performed using an integer 1:6, (3) `group` indicates whether the observation was initially in the `test` data set or `train` data set.
