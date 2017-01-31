@@ -1,10 +1,15 @@
 data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 `test` and `train` : tables `X_test.txt` and `X_train.tst` from UCI HAR Dataset. These contain values for all subjects on the 561 metrics measured.
+
 `feature.labels` : character vector storing names of the 561 metrics measured
+
 `subject.test` and `subject.train` : vectors of subject ID of each observation in `test` and `train` (same as `subject_test.txt` and `subject_train.txt` from UCI HAR Dataset)
+
 'trainlab` and 'testlab` : contains integers 1:6 describing the activities performed at each observation in `test` and `train` (same as `y_train.txt` and `y_test.txt` from UCI HAR Dataset)
+
 `ALLD` : merged dataframe, `test` + `train`. Also includes columns specifying subject ID, activity, and group (testing or training)
+
 `all.stats` : data frame containing mean values for each metric, grouped by subject ID and activity.
 
 
